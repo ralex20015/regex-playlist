@@ -28,3 +28,20 @@ input.valid{
 input.invalid{
     border: 3px solid red;
 }
+/*elemento_anterior + elemento_afectado { estilos }*/
+input + p{
+    font-family: arial;
+    color: red;
+    font-size: 0.9rem;
+    opacity: 0;
+    font-weight: 700;
+    height: 0;
+    margin: 0px 10px;
+    text-align: center;
+}
+
+input.invalid + p{
+    opacity: 1;
+    height: auto;
+    margin-bottom: 20px;
+}
